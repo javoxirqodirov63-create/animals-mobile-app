@@ -4,8 +4,13 @@ import 'package:http/http.dart' as http;
 import '../models/listing_model.dart';
 
 class ApiService {
-  // O'zimizning FastAPI serverimiz manzili
-  static const String baseUrl = 'http://127.0.0.1:8000/api';
+  // FastAPI server manzili (Vebda jonli Vercel backend, dasturiy rejimda localhost)
+  static String get baseUrl {
+    if (kIsWeb && !kDebugMode) {
+      return 'https://instant-perseus-m6bzsd4.tmp.now/api';
+    }
+    return 'http://127.0.0.1:8000/api';
+  }
 
   // Serverdagi barcha e'lonlarni yuklab olish
   static Future<List<Listing>> fetchListings() async {
