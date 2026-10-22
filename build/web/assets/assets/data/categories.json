@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "slug": "uy-hayvonlari",
+    "name_uz": "Uy hayvonlari",
+    "name_ru": "Домашние питомцы",
+    "icon": "paw",
+    "subcategories": [
+      {"id": 11, "name_uz": "Mushuklar va mushukchalar", "name_ru": "Кошки и котята"},
+      {"id": 12, "name_uz": "Itlar va kuchukchalar", "name_ru": "Собаки и щенки"},
+      {"id": 13, "name_uz": "Dekorativ to'tiqushlar va sayroqi qushlar", "name_ru": "Попугаи и певчие птицы"},
+      {"id": 14, "name_uz": "Akvarium baliqlari", "name_ru": "Аквариумные рыбки"},
+      {"id": 15, "name_uz": "Quyonlar va kemiruvchilar", "name_ru": "Кролики и грызуны"}
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "parrandalar",
+    "name_uz": "Parrandalar",
+    "name_ru": "Птицы",
+    "icon": "bird",
+    "subcategories": [
+      {"id": 21, "name_uz": "Tovuq va jo'jalar", "name_ru": "Куры и цыплята"},
+      {"id": 22, "name_uz": "O'rdak va g'ozlar", "name_ru": "Утки и гуси"},
+      {"id": 23, "name_uz": "Bedana va kurkalar", "name_ru": "Перепела и индейки"},
+      {"id": 24, "name_uz": "Kabutarlar va xonaki qushlar", "name_ru": "Голуби и домашние птицы"}
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "chorvachilik",
+    "name_uz": "Chorva mollari",
+    "name_ru": "Сельскохозяйственные животные",
+    "icon": "cow",
+    "subcategories": [
+      {"id": 31, "name_uz": "Qoramol (buzoq, sigir, buqa)", "name_ru": "Крупный рогатый скот"},
+      {"id": 32, "name_uz": "Qo'y va echkilar", "name_ru": "Овцы и козы"},
+      {"id": 33, "name_uz": "Otlar va tuyalar", "name_ru": "Лошади и верблюды"}
+    ]
+  }
+]

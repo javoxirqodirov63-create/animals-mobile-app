@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals-uz — Ilovani Yuklab Olish</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: #f8fafc; color: #1e293b; display: flex; flex-direction: column; min-height: 100vh; }
+    .header { background: linear-gradient(135deg, #1b5e20, #2e7d32); color: white; padding: 48px 24px; text-align: center; }
+    .logo { font-size: 56px; margin-bottom: 12px; }
+    .title { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { font-size: 16px; opacity: 0.9; max-width: 500px; margin: 0 auto; line-height: 1.5; }
+    .container { max-width: 600px; margin: -24px auto 32px; padding: 0 16px; width: 100%; }
+    .card { background: white; border-radius: 20px; padding: 32px 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); text-align: center; }
+    .btn { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; padding: 16px; margin-bottom: 16px; border-radius: 14px; text-decoration: none; font-size: 16px; font-weight: 700; transition: all 0.2s; cursor: pointer; border: none; }
+    .btn-primary { background-color: #2e7d32; color: white; }
+    .btn-primary:hover { background-color: #1b5e20; }
+    .btn-telegram { background-color: #229ed9; color: white; }
+    .btn-telegram:hover { background-color: #1a80b0; }
+    .btn-web { background-color: #f1f5f9; color: #334155; }
+    .btn-web:hover { background-color: #e2e8f0; }
+    .features { margin-top: 32px; text-align: left; }
+    .features h3 { font-size: 18px; margin-bottom: 16px; color: #0f172a; }
+    .feature-item { display: flex; gap: 12px; margin-bottom: 14px; font-size: 14px; color: #475569; }
+    .feature-icon { color: #2e7d32; font-weight: bold; }
+    .footer { margin-top: auto; padding: 24px; text-align: center; font-size: 13px; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">🐾</div>
+    <h1 class="title">Animals-uz</h1>
+    <p class="subtitle">O'zbekistonda chorva mollari va uy hayvonlarini sotish va sotib olish bo'yicha 1-raqamli mobil ilova</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2 style="font-size: 20px; margin-bottom: 20px;">Ilovani hoziroq o'rnating</h2>
+
+      <!-- PWA / Brauzerdan to'g'ridan-to'g'ri o'rnatish -->
+      <a href="/" class="btn btn-primary">
+        <span>📱</span> Ilovani Ochish va Telefonga O'rnatish
+      </a>
+
+      <!-- Telegram kanal orqali -->
+      <a href="https://t.me" target="_blank" class="btn btn-telegram">
+        <span>✈️</span> Telegram Orqali Yuklab Olish (.APK)
+      </a>
+
+      <!-- Web sayt versiyasi -->
+      <a href="/" class="btn btn-web">
+        <span>🌐</span> Veb Versiyasini Ishlatish
+      </a>
+
+      <div class="features">
+        <h3>Ilova afzalliklari:</h3>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><b>Barcha viloyatlar:</b> Samarqand, Toshkent, Andijon va boshqa barcha hududlar bo'yicha qulay saralash.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><b>Keng qamrov:</b> Qoramol, hisori qo'ylar, otlar, tovuqlar va uy hayvonlari bir joyda.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><b>To'g'ridan-to'g'ri aloqa:</b> Sotuvchiga bevosita telefon qilish yoki SMS yozish.</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span><b>100% bepul:</b> E'lonlarni ko'rish va yangi e'lon berish mutlaqo bepul.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Animals-uz. Barcha huquqlar himoyalangan.
+  </div>
+</body>
+</html>
