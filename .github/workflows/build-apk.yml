@@ -1,0 +1,37 @@
+name: Animals-uz APK Build
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Java JDK o'rnatish
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Flutter o'rnatish
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.7'
+          channel: 'stable'
+
+      - name: Bog'liqliklarni yuklash
+        run: flutter pub get
+
+      - name: Android APK faylini yig'ish (Release)
+        run: flutter build apk --release --split-per-abi
+
+      - name: APK fayllarni yuklab olishga chiqarish (Artifacts)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Animals-uz-APK
+          path: build/app/outputs/flutter-apk/*.apk
